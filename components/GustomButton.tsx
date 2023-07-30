@@ -3,11 +3,11 @@
 import { CustonButtonProps } from "@/types";
 import Image from "next/image";
 
-const GustomButton = ({ title, containerStyles, handleClick }: CustonButtonProps) => {
+const GustomButton = ({ title, containerStyles, handleClick, btnType }: CustonButtonProps) => {
   return (
     <button
       disabled={false}
-      type={"button"}
+      type={btnType || "button"}
       className={`custom-btn ${containerStyles}`}
       onClick={handleClick}
     >
