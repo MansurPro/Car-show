@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import { GustomButton } from ".";
+import { CustomButton } from ".";
 
 const Navbar = () => {
   return (
@@ -17,7 +17,7 @@ const Navbar = () => {
           />
         </Link>
 
-        <GustomButton 
+        <CustomButton 
           title="Sign In"
           btnType="button"
           containerStyles="text-primary-blue rounded-full bg-white min-w-[130px]"
